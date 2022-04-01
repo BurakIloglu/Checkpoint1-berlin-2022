@@ -1,0 +1,179 @@
+.pink-bg {
+  background-color: pink;
+}
+
+.pink-text {
+  color: pink;
+}
+
+.purple-text {
+  color: #750ff7;
+}
+
+.description {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.description p {
+  width: 60%;
+  text-align: center;
+}
+
+.desktop {
+  margin: 80px 0 -5px 0;
+}
+
+.skills {
+  margin-top: -30px;
+  border-radius: 12px;
+  padding: 0 10%;
+}
+
+.column {
+  border-left: 1px solid #e6ecf8;
+  border-right: 1px solid #e6ecf8;
+  border-bottom: 1px solid #e6ecf8;
+  background-color: #ffffff;
+  padding: 60px 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+}
+
+.column:first-child {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.column:last-child {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box {
+  width: 25%;
+  padding: 30px;
+  border: 1px solid #e6ecf8;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+}
+
+img {
+  max-width: 100%;
+}
+
+.projects a {
+  color: #750ff7;
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/*modifications apportées*/
+
+.navbar {
+  justify-content: space-between;
+}
+
+.firstBanner__div {
+text-align: center;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.btnModify {
+  background-color: rgb(252, 169, 183);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.btnModifList {
+  background-color : #750ff7;
+  color : pink;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#btnSubmit {
+  background-color : #750ff7;
+  color : pink;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+}
+#newTool{
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media all and (max-width: 700px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+  .desktop {
+    display: none;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .introduction{
+    display: flex;
+    justify-content: center;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .column {
+    width: 35%;
+  }
+  .column:first-child {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+  }
+  .column:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .contents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
