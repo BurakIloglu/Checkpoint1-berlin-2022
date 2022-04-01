@@ -1,0 +1,88 @@
+/*  YOU DON'T NEED TO TOUCH THIS FILE */
+@import url('https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Roboto:wght@400&display=swap');
+
+body {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  margin: 15px 30px;
+
+}
+
+.logo {
+  max-height: 3rem;
+}
+
+#name {
+  color: red;
+}
+
+.purple {
+  color: #750ff7;
+}
+
+button:focus {
+  outline: none;
+}
+
+.disabled {
+  opacity: 0.30;
+}
+
+.class-button {
+  background-color: #750ff7;
+  color: white;
+  border: 0;
+}
+
+/*Ecran Ordi*/
+@media screen and (min-width: 700px) {
+
+.navbar {
+  justify-content: space-between;
+}
+#hello {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+
+
+/*Ecran Portable*/
+@media screen and (max-width: 700px) {
+
+#image-desktop {
+  display: none;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  display: flex;
+flex-direction: column-reverse;
+}
+
+
+}
