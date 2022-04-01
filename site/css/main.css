@@ -1,0 +1,74 @@
+/*  YOU DON'T NEED TO TOUCH THIS FILE */
+@import url('https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Roboto:wght@400&display=swap');
+
+body {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  margin: 15px 30px;
+}
+
+.logo {
+  max-height: 3rem;
+}
+
+#name {
+  color: red;
+}
+
+.purple {
+  color: #750ff7;
+}
+
+
+.desktop{
+  display: none;
+}
+.skills{
+  display: flex;
+  flex-direction: column-reverse;  
+}
+
+.button{
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  background-color: rgb(241, 150, 150);
+  color: white;
+}
+
+.disabled{
+  opacity:50%;
+}
+
+@media (min-width: 700px){
+  .navbar{
+    justify-content: space-between;
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .desktop{
+    display: block;
+  }
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .contents{
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
