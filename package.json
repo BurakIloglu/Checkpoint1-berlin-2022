@@ -1,0 +1,16 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "algo1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
