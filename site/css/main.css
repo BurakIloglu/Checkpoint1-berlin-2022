@@ -1,0 +1,91 @@
+/*  YOU DON'T NEED TO TOUCH THIS FILE */
+@import url('https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Roboto:wght@400&display=swap');
+
+body {
+	font-family: 'Dosis', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 30px;
+}
+
+.logo {
+	max-height: 3rem;
+}
+
+.first-banner {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#name {
+	color: red;
+}
+
+.purple {
+	color: #750ff7;
+}
+
+button {
+	color: white;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #f76c6c;
+	border: none;
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
+
+.disabled {
+	opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+	.introduction {
+		display: none;
+	}
+	.skills {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+@media (min-width: 700px) {
+	.skills {
+		display: flex;
+		flex-direction: row;
+
+		justify-content: space-between;
+	}
+	.projects {
+		display: flex;
+		flex-direction: column;
+	}
+	.heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contents {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+}
